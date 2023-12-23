@@ -1,6 +1,20 @@
 # MySql_Cheats
 Basic Sql Commands
 
+## First create local dbdocker mysqldb
+
+```
+docker volume create mysql-volume
+
+docker run --name=mysql -p3308:3306 -v mysql-volume:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=******** -d mysql:latest
+
+docker exec -it mysql bash
+
+mysql -u root -p
+
+CREATE DATABASE MYSQLDB;
+```
+
 ## Add mysql to PATH
 
 ```bash
